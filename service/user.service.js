@@ -15,6 +15,8 @@ module.exports = {
     current
 };
 
+
+// Register user
 function register(req) {
     return new Promise((res, rej) => {
         const { errors, isValid } = validateRegisterInput(req);
@@ -68,6 +70,7 @@ function register(req) {
     });
 }
 
+// Login user
 function login(req) {
     return new Promise((res, rej) => {
         const { errors, isValid } = validateLoginInput(req);
