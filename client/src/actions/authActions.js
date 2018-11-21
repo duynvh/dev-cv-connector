@@ -8,13 +8,15 @@ export const registerUser = (user, history) => dispatch => {
     axios
         .post('/api/users/register', user)
         .then(res => {
-            if(res.data.errors) {
+            if (res.data.errors) 
+            {
                 dispatch({
                     type: GET_ERRORS,
                     payload: res.data.errors
                 })
             }
-            else {
+            else 
+            {
                 history.push('/login');
             }
         })

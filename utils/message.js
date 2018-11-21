@@ -1,10 +1,10 @@
 module.exports = {
     ERROR_MESSAGE: {
         USER: {
-            EXISTS: 'User is exists',
-            NOT_FOUND: 'User is not found',
-            INVALID: 'User is invalid',
-            PASSWORD_INCORECT: 'Password incorrect'
+            EXISTS: 'ERROR_MESSAGE_USER_EXISTS: User is exists',
+            NOT_FOUND: 'ERROR_MESSAGE_USER_NOT_FOUND: User is not found',
+            INVALID: 'ERROR_MESSAGE_USER_INVALID: User is invalid',
+            PASSWORD_INCORECT: 'ERROR_MESSAGE_USER_PASSWORD_INCORECT: Password incorrect'
         },
         AUTH: {
             INVALID_TOKEN: 'Invalid token',
@@ -25,14 +25,14 @@ module.exports = {
     },
     VALIDATE_MESSAGE: {
         USER: {
-            NAME_IS_LENGTH: 'Name must be between 6 and 30 characters',
-            NAME_EMPTY: 'Name field is required',
-            EMAIL_EMPTY: 'Email field is required',
-            EMAIL_INVALID: 'Email field is invalid',
-            PASSWORD_EMPTY: 'Password field is required',
-            PASSWORD_IS_LENGTH: 'Password must be between 6 and 30 characters',
-            CONFIRM_PASSWORD_EMPTY: 'Confirm password is required',
-            CONFIRM_PASSWORD_NOT_MATCH: 'Passwords must match'
+            NAME_IS_LENGTH: 'VALIDATE_MESSAGE_USER_NAME_IS_LENGTH: Name must be between 6 and 30 characters',
+            NAME_EMPTY: 'VALIDATE_MESSAGE_USER_NAME_EMPTY: Name field is required',
+            EMAIL_EMPTY: 'VALIDATE_MESSAGE_USER_EMAIL_EMPTY: Email field is required',
+            EMAIL_INVALID: 'VALIDATE_MESSAGE_USER_EMAIL_INVALID: Email field is invalid',
+            PASSWORD_EMPTY: 'VALIDATE_MESSAGE_USER_PASSWORD_EMPTY: Password field is required',
+            PASSWORD_IS_LENGTH: 'VALIDATE_MESSAGE_USER_PASSWORD_IS_LENGTH: Password must be between 6 and 30 characters',
+            CONFIRM_PASSWORD_EMPTY: 'VALIDATE_MESSAGE_USER_CONFIRM_PASSWORD_EMPTY: Confirm password is required',
+            CONFIRM_PASSWORD_NOT_MATCH: 'VALIDATE_MESSAGE_USER_CONFIRM_PASSWORD_NOT_MATCH: Passwords must match'
         },
         PROFILE: {
             HANDLE_IS_LENGTH: 'Handle must be between 6 and 30 characters',

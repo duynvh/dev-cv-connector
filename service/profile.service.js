@@ -108,6 +108,10 @@ function getProfileByUserId(req) {
     });
 }
 
+// Create Or Edit Profile
+// If Edit when profile.user is exsits
+
+
 function createOrEditProfile(req) {
     return new Promise((res, rej) => {
         const { errors, isValid } = validateProfileInput(req);
@@ -237,6 +241,7 @@ function addEducationToProfile(req) {
     });
 }
 
+// Delete Experience
 function deleteExperience(req) {
     return new Promise((res, rej) => {
         Profile.findOne({ user: req.user })
@@ -256,6 +261,7 @@ function deleteExperience(req) {
     });
 }
 
+// Delete Education
 function deleteEducation(req) {
     return new Promise((res, rej) => {
         Profile.findOne({ user: req.user })
@@ -275,6 +281,7 @@ function deleteEducation(req) {
     });
 }
 
+// Delete My Account
 function deleteUserAndProfile(req) {
     return new Promise((res, rej) => {
         Profile.findOneAndRemove({ user: req.user.id }).then(() => {
